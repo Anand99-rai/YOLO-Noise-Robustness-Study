@@ -1,0 +1,15 @@
+../dataset/
+../cv_env/
+
+*.pt
+*.png
+*.jpg
+*.jpeg
+
+__pycache__/
+.ipynb_checkpoints/
+
+test.ipynb
+robustness_yolov8.ipynb
+image/
+models/
