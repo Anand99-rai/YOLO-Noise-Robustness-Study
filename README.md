@@ -1,6 +1,6 @@
 # 🖼️ YOLOv8 Noise Robustness Analysis
 
-This project evaluates how different **image degradation techniques** — including **Gaussian Noise, Salt & Pepper Noise, Speckle Noise, Poisson Noise, Gaussian Blur, and Motion Blur** — impact **YOLOv8n object detection performance**.
+This project evaluates how different **image degradation techniques** — including **Gaussian Noise, Salt & Pepper Noise, Speckle Noise, and Poisson Noise** — impact **YOLOv8n object detection performance**.
 
 The study analyzes how detection accuracy degrades as noise intensity increases.
 
@@ -77,7 +77,6 @@ The notebook will:
 
 - **Speckle Noise:** Affects bounding box localization consistency  
 
-- **Blur Effects:** Reduce sharp feature detection and small object recognition  
 
 Overall, detection performance decreases as degradation intensity increases.
 
