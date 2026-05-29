@@ -1,1 +1,28 @@
+## Results
 
+### Key Findings
+
+- Evaluated **YOLOv8n, YOLOv9n, YOLOv10n, YOLOv11n, and YOLO26n** under Gaussian, Salt-and-Pepper, and Poisson noise conditions.
+- Conducted robustness analysis using **mAP@0.5, Precision, Recall, F1-Score, Latency, and Robustness Retention Index (RRI)**.
+- **Gaussian Noise** caused the highest degradation in detection performance, significantly reducing mAP and F1-Score at higher noise levels.
+- **Salt-and-Pepper Noise** resulted in gradual performance degradation, with models maintaining moderate detection capability at intermediate noise intensities.
+- **Poisson Noise** had minimal impact on object detection performance, with most models retaining near-baseline accuracy.
+- **YOLOv9s** demonstrated the strongest robustness, consistently achieving the highest mAP and RRI under noisy conditions.
+- **YOLOv10n** provided the best balance between detection accuracy, robustness, and inference speed, making it suitable for real-time applications.
+- Lightweight models achieved lower latency but were generally more sensitive to severe image degradation.
+- Developed a comparative robustness benchmarking framework to analyze the impact of environmental noise on modern YOLO architectures.
+
+### Performance Highlights
+
+| Metric | Best Observation |
+|----------|------------------|
+| Robustness under Noise | YOLOv9s |
+| Accuracy-Speed Trade-off | YOLOv10n |
+| Most Harmful Noise Type | Gaussian Noise |
+| Least Harmful Noise Type | Poisson Noise |
+| Evaluation Metrics | mAP, Precision, Recall, F1-Score, Latency, RRI |
+| Dataset | COCO Human Detection Subset |
+
+### Conclusion from Results
+
+The study demonstrates that object detection performance is highly dependent on image quality and noise characteristics. Among the evaluated models, **YOLOv9s** exhibited the highest resilience to image degradation, while **YOLOv10n** offered the most practical balance between robustness and computational efficiency. These findings provide valuable insights for deploying YOLO-based object detection systems in real-world environments such as surveillance, autonomous navigation, and edge AI applications.
